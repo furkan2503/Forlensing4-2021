@@ -8,5 +8,6 @@ public class HttpClientTest {
     @Test
     void shouldDoSomething() {
         assertEquals(200, 100+200);
+
     }
 }
