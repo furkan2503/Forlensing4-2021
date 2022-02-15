@@ -15,5 +15,9 @@ public class HttpClientTest {
         assertEquals(200,
                 new HttpClient("httpbin.org", 80, "/html")
                         .getStatusCode());
+        assertEquals(404,
+                new HttpClient("httpbin.org", 80, "/no-such-page")
+                        .getStatusCode());
+
     }
 }
